@@ -1,0 +1,15 @@
+.bloom-out-1 {
+  animation: var(--animation-bloom-fade-out) forwards,
+    var(--animation-scale-down);
+  animation-timing-function: var(--ease-elastic-in-out-3);
+  animation-duration: 1s;
+}
+
+.bloom-out-2 {
+  animation: var(--animation-scale-down), var(--animation-bloom-fade-out);
+  animation-timing-function: var(--ease-elastic-in-out-4);
+}
+
+.super-ping {
+  animation: var(--animation-bloom-fade-in), var(--animation-ping);
+}
