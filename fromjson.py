@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-conn = sqlite3.connect('mech2.db')
+conn = sqlite3.connect('mechlist.db')
 conn.execute("CREATE TABLE mech_table (field1 text, field2 text, field3 text);")
 with open('units.json', 'r') as json_file:
     data = json.load(json_file)
