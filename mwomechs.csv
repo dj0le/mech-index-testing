@@ -1,0 +1,85 @@
+shortName,chassis,model,year,weight,weightClass,cost,bv,isClan,armorType,totalExternalArmor,totalInternalArmor,structureType,engine,heatCapacity,heatSinks
+Adder Prime,Adder,Prime,3010,35,Light,6790500,1558,TRUE,Ferro-Fibrous,115,58,Endo Steel,210 XL,28,14
+Annihilator ANH-1A,Annihilator,ANH-1A,3025,100,Assault,7696667,1434,FALSE,Standard,200,152,Standard,200,18,18
+Archer ARC-2K,Archer,ARC-2K,3025,70,Heavy,6170774,1356,FALSE,Standard,176,107,Standard,280,12,12
+Arctic Cheetah-Prime,Arctic Cheetah,Prime,3037,30,Light,7737456,900,TRUE,Standard,162,48,Endo Steel,240 XL,20,10
+Arctic Wolf ACW-2,Arctic Wolf,ACW-2,3060,40,Medium,7546093,1511,TRUE,Standard,96,67,Endo Steel,280 XL,20,10
+Arctic Wolf ACW,Arctic Wolf,ACW,3060,40,Medium,7768693,1330,TRUE,Standard,96,67,Endo Steel,280 XL,20,10
+Assassin ASN-101,Assassin,ASN-101,3025,40,Medium,3537263,757,FALSE,Standard,64,67,Standard,280,10,10
+Atlas AS7-6V,Atlas,AS7-6V,3070,100,Assault,12330000,2342,FALSE,Standard,304,152,Standard,300,28,14
+Awesome AWS-9MC,Awesome,AWS-9MC,3070,80,Assault,8405220,1743,FALSE,Heavy Ferro-Fibrous,247,122,Standard,320,34,17
+Banshee BNC-3Mr,Banshee,BNC-3Mr,3073,95,Assault,10534128,1801,FALSE,Standard,240,145,Standard,380,32,16
+BattleMaster BLR-10K,BattleMaster,BLR-10K,3070,85,Assault,9226443,1876,FALSE,Ferro-Fibrous,250,130,Standard,340,36,18
+Black Knight BL-6-KLC,Black Knight,BL-6-KLC,3067,75,Heavy,7763000,1772,FALSE,Standard,231,114,Endo Steel,300,38,19
+Black Lanner Prime,Black Lanner,Prime,3052,55,Medium,18030697,2215,TRUE,Ferro-Fibrous,153,91,Endo Steel,385 XL,20,10
+Blood Asp D,Blood Asp,D,3060,90,Assault,29309875,2396,TRUE,Standard,256,138,Endo Steel,360 XL,32,16
+Bushwacker BSW-X1,Bushwacker,BSW-X1,3058,55,Medium,9807366,1223,FALSE,Ferro-Fibrous,161,91,Standard,275 XL,22,11
+Champion CHP-4C,Champion,CHP-4C,3060,60,Heavy,11805760,1760,FALSE,Standard,184,99,Endo Steel,300 XL,20,10
+Charger CGR-1A1,Charger,CGR-1A1,3025,80,Assault,7520370,981,FALSE,Standard,160,122,Standard,400,10,10
+Cougar Prime,Cougar,Prime,3060,35,Light,6065438,1485,TRUE,Ferro-Fibrous,105,58,Endo Steel,175 XL,20,10
+Crab CRB-27,Crab,CRB-27,2750,50,Medium,4050875,1198,FALSE,Ferro-Fibrous,161,83,Standard,250,16,16
+Crusader CRD-3E,Crusader,CRD-3E,3070,65,Heavy,11217360,1534,FALSE,Standard,200,104,Endo Steel,260 Light,20,10
+Cyclops CP-11-L,Cyclops,CP-11-L,3070,90,Assault,11795960,2170,FALSE,Stealth,272,138,Endo Steel,360,20,10
+Dervish DV-7D,Dervish,DV-7D,3050,55,Medium,5571216,1412,FALSE,Ferro-Fibrous,143,91,Endo Steel,275,20,10
+Dire Wolf Prime,Dire Wolf,Prime,3050,100,Assault,29350000,2712,TRUE,Standard,304,152,Standard,300 XL,44,22
+Ebon Jaguar,Ebon Jaguar,A,3049,65,Heavy,13141764,2109,TRUE,Ferro-Fibrous,304,118,Standard,325 XL,24,13
+Executioner Prime,Executioner,Prime,3070,95,Assault,32471198,2884,TRUE,Standard,288,145,Endo Steel,380 XL,36,18
+Fafnir FNR-6U,Fafnir,FNR-6U,3132,100,Assault,19619000,2234,FALSE,Light Ferro-Fibrous,307,152,Standard,300 Light,24,12
+Flea FLE-19,Flea,FLE-19,3050,20,Light,1483500,381,FALSE,Standard,48,33,Endo Steel,120,10,10
+Griffin GRF-1P,Griffin,GRF-1P,3070,55,Medium,5377157,1502,FALSE,Ferro-Fibrous,161,91,Standard,275,20,10
+Hatamoto-Chi HTM-37T,Hatamoto-Chi,HTM-37T,3070,80,Assault,9480720,1732,FALSE,Standard,247,122,Endo Steel,320,32,16
+Hellbringer Prime,Hellbringer,Prime,3070,65,Heavy,18982906,2685,TRUE,Standard,152,104,Endo Steel,325 XL,32,16
+Hellfire HLF-2,Hellfire,HLF-2,3064,60,Heavy,13508560,2370,TRUE,Ferro-Fibrous,172,99,Standard,300 XL,36,18
+Hellspawn HSN-10SR,Hellspawn,HSN-10SR,3132,45,Medium,10421150,1411,FALSE,Standard,144,75,Endo Steel,270 XL,20,10
+Highlander IIC HGN-IIC,Highlander IIC,HGN-IIC,3060,90,Assault,10091280,2979,TRUE,Ferro-Fibrous,278,138,Standard,270,24,12
+Hunchback IIC R,Hunchback IIC,R,3070,50,Medium,7429000,2034,TRUE,Standard,96,83,Endo Steel,200 XL,20,10
+Huntsman Prime,Huntsman,Prime,3058,50,Medium,12634375,2108,TRUE,Ferro-Fibrous,169,83,Endo Steel,250 XL,20,10
+Incubus ICS-3,Incubus,ICS-3,3055,30,Light,5326490,1324,TRUE,Ferro-Fibrous,105,51,Endo Steel,270 XL,20,10
+Javelin JVN-11F,Javelin,JVN-11F,3072,30,Light,4110990,827,FALSE,Standard,96,51,Endo Steel,180 XL,20,10
+Jenner JR7-MI,Jenner,JR7-MI,3070,35,Light,5864625,1175,FALSE,Ferro-Fibrous,107,58,Standard,245 XL,20,10
+King Crab KGC-011,King Crab,KGC-011,3070,100,Assault,20410000,2437,FALSE,Ferro-Fibrous,304,152,Standard,300 Light,20,10
+Kintaro KTO-IIC,Kintaro,KTO-IIC,3070,55,Medium,5725906,1773,TRUE,Ferro-Fibrous,182,91,Endo Steel,275,26,13
+Kit Fox Prime,Kit Fox,Prime,3050,30,Light,5368837,1085,TRUE,Ferro-Fibrous,76,51,Endo Steel,180 XL,20,10
+Kodiak KDK-RD,Kodiak,KDK-RD,3070,100,Assault,29128333,2961,TRUE,Standard,307,152,Endo Steel,400 XL,40,20
+Linebacker Prime,Linebacker,Prime,3055,65,Heavy,20277984,2390,TRUE,Ferro-Fibrous,192,104,Endo Steel,390 XL,28,14
+Locust LCT-5A,Locust,LCT-5A,3070,20,Light,2885600,602,FALSE,Ferro-Fibrous,69,33,Endo Steel,200 XL,10,10
+Longbow LGB-13C,Longbow,LGB-13C,3070,85,Assault,22325646,1397,FALSE,Standard,200,130,Standard,340 XL,24,12
+Mad Cat III MDCT III 2,Mad Cat III,MDCT III 2,3132,55,Medium,12530200,2095,TRUE,Ferro-Fibrous,185,91,Endo Steel,330 XL,32,16
+Mad Dog V,Mad Dog,V,2963,60,Heavy,15300000,1944,TRUE,Ferro-Fibrous,163,99,Standard,300 XL,24,12
+Marauder II MAD-6D,Marauder II,MAD-6D,3083,100,Assault,24950000,2378,FALSE,Standard,304,152,Standard,300 XL,28,14
+Marauder MAD-5R,Marauder,MAD-5R,3067,75,Heavy,16233000,1877,FALSE,Standard,224,114,Standard,300 XL,34,17
+Mauler MAL-2K,Mauler,MAL-2K,3070,90,Assault,10089000,1624,FALSE,Standard,208,138,Endo Steel,270,24,12
+Night Gyr A,Night Gyr,A,3058,75,Heavy,20764844,2680,TRUE,Ferro-Fibrous,220,114,Endo Steel,300 XL,32,16
+Nightstar NSR-9JS,Nightstar,NSR-9JS,3070,95,Assault,16593428,2459,FALSE,Standard,293,145,Standard,285 Light,20,10
+Nova B,Nova,B,3050,50,Medium,10678281,1543,TRUE,Standard,160,83,Standard,250 XL,28,14
+Nova Cat Prime,Nova Cat,Prime,3060,70,Heavy,17672917,2530,TRUE,Standard,216,107,Endo Steel,280 XL,50,25
+Orion IIC ONI-IIC 6,Orion IIC,ONI-IIC 6,3070,75,Heavy,9021250,2051,TRUE,Ferro-Fibrous,230,114,Endo Steel,300,26,13
+Osiris OSR-7D,Osiris,OSR-7D,3070,30,Light,5279300,1030,FALSE,Ferro-Fibrous,80,51,Endo Steel,240 XL,20,10
+Phoenix Hawk PHK-2K,Phoenix Hawk,PHK-2K,3070,45,Medium,4309690,1258,FALSE,Ferro-Fibrous,143,75,Endo Steel,270,26,13
+Piranha PRA,Piranha,PRA,3058,20,Light,2780940,998,TRUE,Standard,64,33,Endo Steel,180 XL,10,10
+Raven X,Raven,X,3078,35,Light,7725375,1050,FALSE,Ferro-Fibrous,89,58,Composite,210 XL,20,10
+Rifleman II RFL-3N-2CS,Rifleman II,RFL-3N-2CS,3070,80,Assault,20049599,1560,FALSE,Standard,192,122,Endo Steel,320 XL,30,15
+Rifleman RFL-5R,Rifleman,RFL-5R,3075,60,Heavy,6576000,1380,FALSE,Light Ferro-Fibrous,152,99,Endo Steel,240,22,11
+Shadow Cat J,Shadow Cat,J,3069,45,Medium,11977907,1802,TRUE,Ferro-Fibrous,134,75,Endo Steel,270 XL,20,10
+Shadow Cat Prime,Shadow Cat,Prime,3058,45,Medium,11785510,2156,TRUE,Ferro-Fibrous,134,75,Endo Steel,270 XL,20,10
+Shadow Hawk SHD-8M,Shadow Hawk,SHD-8M,3070,55,Medium,11840656,1453,FALSE,Light Ferro-Fibrous,169,91,Endo Steel,275 XL,20,10
+Stalker STK-7M,Stalker,STK-7M,3070,85,Assault,9511775,1877,FALSE,Standard,263,130,Standard,255,32,16
+Stormcrow BW,Stormcrow,BW,3070,55,Medium,15338509,1938,TRUE,Ferro-Fibrous,182,91,Endo Steel,330 XL,26,13
+Summoner Prime,Summoner,Prime,3050,70,Heavy,21320834,2298,TRUE,Ferro-Fibrous,182,107,Standard,350 XL,28,14
+Supernova SRN-3,Supernova,SRN-3,3067,90,Assault,9507600,3448,TRUE,Standard,272,138,Endo Steel,270,46,23
+Thanatos TNS-4T,Thanatos,TNS-4T,3070,75,Heavy,16793438,1760,FALSE,Standard,208,114,Endo Steel,300 XL,24,12
+Thunderbolt TDR-5T,Thunderbolt,TDR-5T,3070,65,Heavy,5846885,1455,FALSE,Standard,208,104,Standard,260,24,12
+Timber Wolf Prime,Timber Wolf,Prime,3050,75,Heavy,24233124,2737,TRUE,Ferro-Fibrous,230,114,Endo Steel,375 XL,34,17
+UrbanMech UM-AIV,UrbanMech,UM-AIV,3078,30,Light,2488200,603,FALSE,Standard,96,51,Endo Steel,60 XL,10,10
+Uziel UZL-4S,Uziel,UZL-4S,3065,50,Medium,10164000,1161,FALSE,Standard,128,83,Endo Steel,300 XL,22,11
+Vapor Eagle VREE-5,Vapor Eagle,VREE-5,3055,55,Medium,12522527,2277,TRUE,Ferro-Fibrous,172,91,Endo Steel,330 XL,32,16
+Victor VTR-10D,Victor,VTR-10D,3060,80,Assault,9178320,1894,FALSE,Standard,208,122,Endo Steel,320,24,12
+Vindicator VND-3L,Vindicator,VND-3L,3050,45,Medium,3524370,1105,FALSE,Standard,144,75,Standard,180,30,15
+Viper Prime,Viper,Prime,3050,40,Medium,11051658,1450,TRUE,Ferro-Fibrous,134,67,Endo Steel,320 XL,20,10
+Vulcan VT-6X,Vulcan,VT-6X,3070,40,Medium,6028750,952,FALSE,Standard,112,67,Endo Steel,240 Light,20,10
+Vulcan VT-7M,Vulcan,VT-7M,2750,40,Medium,3839360,1175,FALSE,Ferro-Fibrous,134,67,Endo Steel,240,20,10
+Vulcan VT-7S,Vulcan,VT-7S,3070,40,Medium,7182000,1039,FALSE,Ferro-Fibrous,89,67,Standard,240 XL,20,10
+Warhammer WHM-IICG,Warhammer,WHM-IICG,3070,80,Assault,19733249,3096,TRUE,Hardened,228,122,Endo Steel,320 XL,38,19
+Warhammer WHM-9TC,Warhammer,WHM-9TC,3070,70,Heavy,16550067,1704,FALSE,Ferro-Fibrous,179,107,Standard,350 XL,36,18
+Warhawk Prime,Warhawk,Prime,3050,85,Assault,26425323,3194,TRUE,Ferro-Fibrous,259,130,Standard,340 XL,40,20
+Wolfhound WLF-5DS,Wolfhound,WLF-5DS,3070,35,Light,3423330,1122,FALSE,Standard,112,58,Endo Steel,210,24,12
