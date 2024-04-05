@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MechIndex</title>
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/open-props/normalize.min.css"
+    />
+  </head>
+  <body>
+    <h1>Mech Viewer</h1>
+    <p>
+      an exhaustive list of battelemechs from the star league until the Clan
+      Wars era in Battletech
+    </p>
+
+    <p>Find a mech</p>
+    <!-- <form action="/type">
+      <label>by Type</label>
+      <select name="type1">
+        (% for role in roles %) (% if type == type1 %)
+        <option value="{{type}}" selected>{{type}}</option>
+        (% else %)
+        <option value="{{type}}"></option>
+        (% endif %) (% endfor%)</select
+      ><br /><br />
+      <button type="submit">Search</button>
+    </form>
+    <form action="/">
+      <button type="submit">Reset</button>
+    </form> -->
+    <!-- <div>{{type}}</div> -->
+    <div class="gallery">
+      (% for mechs in mechs %)
+      <div>{{ list_mechs }}</div>
+      (% endfor %)
+    </div>
+</html>
