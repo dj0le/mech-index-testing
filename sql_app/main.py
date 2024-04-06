@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi.responses import HTMLResponse
 # from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from contextlib import asynccontextmanager
 
 from . import crud, models, schemas
 from .database import SessionLocal, engine
@@ -10,6 +11,7 @@ from .database import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
 # app.mount("/static", StaticFiles(directory="sql_app/static"), name="static")
 templates = Jinja2Templates(directory="sql_app/templates")
 
@@ -22,9 +24,10 @@ def get_db():
         db.close()
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
-def list_mechs(request: Request):
+def list_mech_names(request: Request, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    mechs = crud.get_mech_names(db, skip=skip, limit=limit)
     return templates.TemplateResponse(
-        "index.html", {"request": request, "list_mechs": "imagine a list of mechs by name"}
+        "index.html", {"request": request, 'mechs': mechs}
     )
 
 @app.get("/mechs/", response_model=list[schemas.Mech])

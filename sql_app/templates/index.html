@@ -11,13 +11,15 @@
     />
   </head>
   <body>
-    <h1>Mech Viewer</h1>
+    <div class="hero">
+    <h1 class="heading">Mech Viewer</h1>
     <p>
-      an exhaustive list of battelemechs from the star league until the Clan
-      Wars era in Battletech
+      A big list of Battlemechs. Images are based off the Mech Warrior Online versions, but stats are just randomly selected from official Batteltech stats
     </p>
-
+  </div>
+  <div>
     <p>Find a mech</p>
+  </div>
     <!-- <form action="/type">
       <label>by Type</label>
       <select name="type1">
@@ -34,8 +36,10 @@
     </form> -->
     <!-- <div>{{type}}</div> -->
     <div class="gallery">
-      (% for mechs in mechs %)
-      <div>{{ list_mechs }}</div>
+      (% for mech in mechs %)
+      <div><p>
+        {{ mechs }}
+      </p></div>
       (% endfor %)
     </div>
 </html>
