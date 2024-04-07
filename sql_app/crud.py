@@ -11,5 +11,6 @@ def get_mech_by_model(db: Session, mech_model: str):
 def get_mechs(db: Session, skip: int = 0, limit: int = 30):
     return db.query(models.Mech).offset(skip).limit(limit).all()
 
-def get_mech_names(db: Session, skip: int = 0, limit: int = 30):
-    return db.query(models.Mech.shortName).offset(skip).limit(limit).all()
+def get_mech_cards(db: Session, skip: int = 0, limit: int = 30):
+    return db.query(models.Mech.shortName, models.Mech.weightClass, models.Mech.year).offset(skip).limit(limit).all()
+    

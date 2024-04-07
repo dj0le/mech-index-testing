@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MechIndex</title>
     <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    </link rel="stylesheet" href="sql_app/templates/app.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/open-props/normalize.min.css"
@@ -20,26 +21,54 @@
   <div>
     <p>Find a mech</p>
   </div>
-    <!-- <form action="/type">
-      <label>by Type</label>
-      <select name="type1">
-        (% for role in roles %) (% if type == type1 %)
-        <option value="{{type}}" selected>{{type}}</option>
-        (% else %)
-        <option value="{{type}}"></option>
-        (% endif %) (% endfor%)</select
-      ><br /><br />
-      <button type="submit">Search</button>
-    </form>
-    <form action="/">
-      <button type="submit">Reset</button>
-    </form> -->
-    <!-- <div>{{type}}</div> -->
-    <div class="gallery">
-      (% for mech in mechs %)
-      <div><p>
-        {{ mechs }}
-      </p></div>
-      (% endfor %)
-    </div>
+
+  <section class="section">
+    <ul class="card-list">
+      <li>
+      {% for mech in mech_cards %}
+      <div class="card">
+        <div class="visual">
+          <img
+            class="card-image"
+            src=""
+            alt="TWO Battlemech"
+            width="160"
+            height="160"
+          />
+        </div>
+        <div class="content">
+          <div class="meta">
+            <div class="card-header">
+              <h3 class="title">{{ mech.shortName }}</h3>
+            </div>
+            <p class="desc">{{ mech.weightClass}}</p>
+            <p class="desc">{{ mech.year }}</p>
+          </div>
+
+          <div class="controls">
+            <a href="#" class="button-link primary">
+              Details
+              <svg
+                width="18"
+                height="10"
+                viewBox="0 0 18 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1667 1.6665L16.5 4.99984M16.5 4.99984L13.1667 8.33317M16.5 4.99984L1.5 4.99984"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </li>
+  </ul>
+</section>
 </html>

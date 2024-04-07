@@ -22,21 +22,3 @@ class Mech(Base):
     engine = Column(String)
     heatCapacity = Column(Integer)
     heatSinks = Column(Integer)
-    
-    
-
-
-
-
-
-# from sqlmodel import Field, SQLModel
-
-# class mechList(SQLModel, table=True):
-#     id: int | None = Field(default=None, primary_key=True)
-#     name: str
-#     tons: int
-#     bv: str
-#     pv: int
-#     types: str
-#     intro: int
-    
