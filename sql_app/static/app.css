@@ -1,0 +1,204 @@
+@import 'https://unpkg.com/open-props';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Oxanium:wght@200..800&display=swap');
+
+html {
+  --font-body: 'Outfit', sans-serif;
+  --font-title: 'Oxanium', sans-serif;
+}
+
+:root {
+  --surface-1: hsl(104 12 56);
+  --surface-2: hsl(104 12 12);
+  --surface-3: hsl(104 12 22);
+  --text-1: hsl(102 21 7);
+  --text-2: hsl(104 20 14);
+  --text-3: hsl(28 42 91);
+  --text-4: hsl(177 31 29);
+  --border: hsl(103 11 12);
+  --link: hsl(45 73 65);
+
+  --space-sm: var(--size-3);
+  --space-lg: var(--size-5);
+
+  --timing-function-slow-ease: var(--ease-1);
+
+  --font-size-sm: var(--font-size-0);
+  --font-size-body: 1rem;
+  --line-height-body: 1.6em;
+  --font-weight-normal: var(--font-weight-5);
+  --font-weight-bold: var(--font-weight-6);
+  --font-weight-hero: var(--font-weight-8);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--surface-1);
+  color: var(--text-1);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.lines {
+  margin-top: -11rem;
+}
+
+.main-title {
+  font-family: var(--font-title);
+  font-size: 208px;
+  font-weight: var(--font-weight-hero);
+  letter-spacing: -0.03em;
+  line-height: 1.3em;
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border-radius: var(--radius-2);
+  color: var(--text-1);
+  cursor: pointer;
+  display: inline-grid;
+  gap: var(--space-sm);
+  grid-auto-flow: column;
+  padding: 12px 24px;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: background-color 0.2s var(--timing-function-slow-ease);
+}
+
+.primary {
+  width: 100%;
+  background: var(--text-1);
+  color: var(--surface-1);
+}
+
+.primary:hover {
+  color: var(--text-1);
+  background-color: var(--link);
+}
+
+.controls {
+  padding-top: 16px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  padding-inline: 32px;
+  gap: 24px;
+}
+
+.card {
+  display: grid;
+  background-color: var(--surface-3);
+  color: var(--text-3);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-3);
+  display: grid;
+  padding: 16px;
+}
+
+.content {
+  padding-inline: 8px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  font-size: 1.375rem;
+}
+
+.card-title {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.align-right {
+  text-align: end;
+}
+
+.card-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Individual Mech Overview Pages */
+.control-left {
+  padding-left: 16px;
+}
+
+.control-right {
+  padding-right: 16px;
+}
+
+.over-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  place-items: center;
+}
+
+.mech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+/*  */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(:not(dialog)) {
+  margin: 0;
+}
+
+:where(img, svg, video) {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:where(input, button, textarea, select) {
+  font: inherit;
+}
+
+:where(html) {
+  -webkit-text-size-adjust: none;
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+.bloom-out-1 {
+  animation: var(--animation-bloom-fade-out) forwards,
+    var(--animation-scale-down);
+  animation-timing-function: var(--ease-elastic-in-out-3);
+  animation-duration: 1s;
+}
+
+.bloom-out-2 {
+  animation: var(--animation-scale-down), var(--animation-bloom-fade-out);
+  animation-timing-function: var(--ease-elastic-in-out-4);
+}
+
+.super-ping {
+  animation: var(--animation-bloom-fade-in), var(--animation-ping);
+}

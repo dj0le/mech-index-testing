@@ -4,71 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MechIndex</title>
-    <link rel="stylesheet" href="https://unpkg.com/open-props" />
-    </link rel="stylesheet" href="sql_app/templates/app.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/open-props/normalize.min.css"
-    />
+    <link rel="stylesheet" href="{{ url_for('static', path='/app.css') }}" />
   </head>
   <body>
-    <div class="hero">
-    <h1 class="heading">Mech Viewer</h1>
-    <p>
-      A big list of Battlemechs. Images are based off the Mech Warrior Online versions, but stats are just randomly selected from official Batteltech stats
-    </p>
-  </div>
-  <div>
-    <p>Find a mech</p>
-  </div>
-
-  <section class="section">
-    <ul class="card-list">
-      <li>
-      {% for mech in mech_cards %}
-      <div class="card">
-        <div class="visual">
-          <img
-            class="card-image"
-            src=""
-            alt="TWO Battlemech"
-            width="160"
-            height="160"
+    <div class="container">
+      <h1 class="main-title">Mech Index</h1>
+      <div class="lines">
+        <svg
+          width="1138"
+          height="21"
+          viewBox="0 0 1138 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 19H1138"
+            stroke="#899D82"
+            stroke-opacity="0.8"
+            stroke-width="3"
           />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <div class="card-header">
-              <h3 class="title">{{ mech.shortName }}</h3>
-            </div>
-            <p class="desc">{{ mech.weightClass}}</p>
-            <p class="desc">{{ mech.year }}</p>
-          </div>
-
-          <div class="controls">
-            <a href="#" class="button-link primary">
-              Details
-              <svg
-                width="18"
-                height="10"
-                viewBox="0 0 18 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.1667 1.6665L16.5 4.99984M16.5 4.99984L13.1667 8.33317M16.5 4.99984L1.5 4.99984"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
+          <path
+            d="M0 10H1138"
+            stroke="#899D82"
+            stroke-opacity="0.6"
+            stroke-width="2"
+          />
+          <path
+            d="M0 1H1138"
+            stroke="#899D82"
+            stroke-opacity="0.4"
+            stroke-width="2"
+          />
+        </svg>
       </div>
-      {% endfor %}
-    </li>
-  </ul>
-</section>
+    </div>
+
+    <section>
+      <div class="card-list">
+        {% for mech in mech_cards %}
+        <div class="card">
+          <div>
+            <img
+              class="card-image"
+              src="{{ url_for('static', path='/images/test2.png') }}"
+              alt="TWO Battlemech"
+              width="200"
+              height="200"
+            />
+          </div>
+          <div>
+            <div class="content">
+              <h3 class="card-title">{{ mech.chassis }}</h3>
+              <div class="info">
+                <p>{{ mech.weightClass}}</p>
+                <p class="align-right">{{ mech.year }}</p>
+              </div>
+            </div>
+
+            <div class="controls">
+              <a href="mechs/{{ mech.id }}" class="button primary">
+                Overview
+                <svg
+                  width="18"
+                  height="10"
+                  viewBox="0 0 18 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.1667 1.6665L16.5 4.99984M16.5 4.99984L13.1667 8.33317M16.5 4.99984L1.5 4.99984"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </body>
 </html>

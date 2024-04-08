@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mech Overview</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/app.css') }}" />
+  </head>
+  <body>
+    <div class="over-grid">
+      <div class="control-left">
+        <svg
+          width="64"
+          height="112"
+          viewBox="0 0 64 112"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 48.5C13.1421 48.5 16.5 51.8579 16.5 56C16.5 60.1421 13.1421 63.5 9 63.5V48.5ZM2.6967 61.3033C-0.232233 58.3744 -0.232233 53.6256 2.6967 50.6967L50.4264 2.96699C53.3553 0.0380592 58.1041 0.0380592 61.033 2.96699C63.9619 5.89592 63.9619 10.6447 61.033 13.5736L18.6066 56L61.033 98.4264C63.9619 101.355 63.9619 106.104 61.033 109.033C58.1041 111.962 53.3553 111.962 50.4264 109.033L2.6967 61.3033ZM9 63.5H8V48.5H9V63.5Z"
+            fill="#1C2518"
+            fill-opacity="0.25"
+          />
+        </svg>
+      </div>
+
+      <div class="mech-overview">
+        <div class="mech-grid">
+          <div class="overview-image">
+            <img
+              class="card-image"
+              src="{{ url_for('static', path='/images/test3.png') }}"
+              alt="{{ mech.chassis }}"
+              width="1000"
+              height="1000"
+            />
+          </div>
+
+          <div>
+            <h1 class="overview-title">{{ mech.chassis }}</h1>
+            <!-- <div class="lines">
+              <svg
+                width="1138"
+                height="21"
+                viewBox="0 0 1138 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 19H1138"
+                  stroke="#899D82"
+                  stroke-opacity="0.8"
+                  stroke-width="3"
+                />
+                <path
+                  d="M0 10H1138"
+                  stroke="#899D82"
+                  stroke-opacity="0.6"
+                  stroke-width="2"
+                />
+                <path
+                  d="M0 1H1138"
+                  stroke="#899D82"
+                  stroke-opacity="0.4"
+                  stroke-width="2"
+                />
+              </svg>
+            </div> -->
+            <h2>overview</h2>
+            <div class="details">
+              <div class="column">
+                <p>Designation:</p>
+                <p>Year:</p>
+                <p>Weight:</p>
+                <p>Class:</p>
+                <p>Cost:</p>
+                <p>BV:</p>
+                <p>Origin:</p>
+                <p>Armor Type:</p>
+                <p>External Armor Rating:</p>
+                <p>Internal Armor Rating:</p>
+                <p>Structure Type:</p>
+                <p>Engine:</p>
+                <p>Heat Capacity:</p>
+                <p>Heat Sinks:</p>
+              </div>
+              <div class="column">
+                <p>{{ mech.model }}</p>
+                <p>{{ mech.year }}</p>
+                <p>{{ mech.weight }}</p>
+                <p>{{ mech.weightClass }}</p>
+                <p>{{ mech.cost }}</p>
+                <p>{{ mech.bv }}</p>
+                <p>{{ mech.isClan }}</p>
+                <p>{{ mech.armorType }}</p>
+                <p>{{ mech.totalExternalArmor }}</p>
+                <p>{{ mech.totalInternalArmor }}</p>
+                <p>{{ mech.structureType }}</p>
+                <p>{{ mech.engine }}</p>
+                <p>{{ mech.heatCapacity }}</p>
+                <p>{{ mech.heatSinks }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-right">
+        <svg
+          width="64"
+          height="112"
+          viewBox="0 0 64 112"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M55 48.5C50.8579 48.5 47.5 51.8579 47.5 56C47.5 60.1421 50.8579 63.5 55 63.5V48.5ZM61.3033 61.3033C64.2322 58.3744 64.2322 53.6256 61.3033 50.6967L13.5736 2.96699C10.6447 0.0380592 5.89592 0.0380592 2.96699 2.96699C0.0380592 5.89592 0.0380592 10.6447 2.96699 13.5736L45.3934 56L2.96699 98.4264C0.0380592 101.355 0.0380592 106.104 2.96699 109.033C5.89592 111.962 10.6447 111.962 13.5736 109.033L61.3033 61.3033ZM55 63.5H56V48.5H55V63.5Z"
+            fill="#1C2518"
+            fill-opacity="0.25"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
