@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mech Overview</title>
     <link rel="stylesheet" href="{{ url_for('static', path='/app.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/overview.css') }}"
+    />
   </head>
   <body>
-    <div class="over-grid">
+    <!-- <div class="control-grid">
       <div class="control-left">
         <svg
           width="64"
@@ -22,23 +26,24 @@
             fill-opacity="0.25"
           />
         </svg>
-      </div>
+      </div> -->
 
-      <div class="mech-overview">
-        <div class="mech-grid">
-          <div class="overview-image">
-            <img
-              class="card-image"
-              src="{{ url_for('static', path='/images/test3.png') }}"
-              alt="{{ mech.chassis }}"
-              width="1000"
-              height="1000"
-            />
-          </div>
+    <div class="mech-overview">
+      <div class="mech-grid">
+        <div class="overview-image">
+          <img
+            class="card-image"
+            src="{{ url_for('static', path='/images/test3.png') }}"
+            alt="{{ mech.chassis }}"
+            width="1000"
+            height="1000"
+          />
+        </div>
 
-          <div>
-            <h1 class="overview-title">{{ mech.chassis }}</h1>
-            <!-- <div class="lines">
+        <div>
+          <div class="decoration-overview-h1">
+            <h1 class="overview-h1">{{ mech.chassis }}</h1>
+            <div class="decoration">
               <svg
                 width="1138"
                 height="21"
@@ -65,47 +70,46 @@
                   stroke-width="2"
                 />
               </svg>
-            </div> -->
-            <h2>overview</h2>
+            </div>
+          </div>
+          <div class="info-grid">
+            <h2 class="overview-h2">overview</h2>
             <div class="details">
-              <div class="column">
-                <p>Designation:</p>
-                <p>Year:</p>
-                <p>Weight:</p>
-                <p>Class:</p>
-                <p>Cost:</p>
-                <p>BV:</p>
-                <p>Origin:</p>
-                <p>Armor Type:</p>
-                <p>External Armor Rating:</p>
-                <p>Internal Armor Rating:</p>
-                <p>Structure Type:</p>
-                <p>Engine:</p>
-                <p>Heat Capacity:</p>
-                <p>Heat Sinks:</p>
-              </div>
-              <div class="column">
-                <p>{{ mech.model }}</p>
-                <p>{{ mech.year }}</p>
-                <p>{{ mech.weight }}</p>
-                <p>{{ mech.weightClass }}</p>
-                <p>{{ mech.cost }}</p>
-                <p>{{ mech.bv }}</p>
-                <p>{{ mech.isClan }}</p>
-                <p>{{ mech.armorType }}</p>
-                <p>{{ mech.totalExternalArmor }}</p>
-                <p>{{ mech.totalInternalArmor }}</p>
-                <p>{{ mech.structureType }}</p>
-                <p>{{ mech.engine }}</p>
-                <p>{{ mech.heatCapacity }}</p>
-                <p>{{ mech.heatSinks }}</p>
-              </div>
+              <div class="column-left">Year:</div>
+              <div class="column-right">{{ mech.model }}</div>
+              <div class="column-left">Designation:</div>
+              <div class="column-right">{{ mech.year }}</div>
+              <div class="column-left">Weight</div>
+              <div class="column-right">{{ mech.weight }}</div>
+              <div class="column-left">Class:</div>
+              <div class="column-right">{{ mech.weightClass }}</div>
+              <div class="column-left">Cost:</div>
+              <div class="column-right">{{ mech.cost }}</div>
+              <div class="column-left">BV:</div>
+              <div class="column-right">{{ mech.bv }}</div>
+              <div class="column-left">Origin:</div>
+              <div class="column-right">{{ mech.isClan }}</div>
+              <div class="column-left">Armor Type:</div>
+              <div class="column-right">{{ mech.armorType }}</div>
+              <div class="column-left">External Armor Rating:</div>
+              <div class="column-right">{{ mech.totalExternalArmor }}</div>
+              <div class="column-left">Internal Armor Rating:</div>
+              <div class="column-right">{{ mech.totalInternalArmor }}</div>
+              <div class="column-left">Structure Type:</div>
+              <div class="column-right">{{ mech.structureType }}</div>
+              <div class="column-left">Engine:</div>
+              <div class="column-right">{{ mech.engine }}</div>
+              <div class="column-left">Heat Capacity:</div>
+              <div class="column-right">{{ mech.heatCapacity }}</div>
+              <div class="column-left">Heat Sinks:</div>
+              <div class="column-right">{{ mech.heatSinks }}</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="control-right">
+    <!-- <div class="control-right">
         <svg
           width="64"
           height="112"
@@ -120,6 +124,6 @@
           />
         </svg>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

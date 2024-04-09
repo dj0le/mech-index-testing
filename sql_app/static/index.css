@@ -1,0 +1,96 @@
+/* Landing Page Additional CSS */
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.lines {
+  margin-top: -11rem;
+}
+
+.main-title {
+  color: var(--text-2);
+  font-family: var(--font-title);
+  font-size: 208px;
+  font-weight: var(--font-weight-hero);
+  letter-spacing: var(--letter-spacing-title);
+  line-height: 1.3em;
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border-radius: var(--radius-2);
+  color: var(--text-1);
+  cursor: pointer;
+  display: inline-grid;
+  gap: var(--space-sm);
+  grid-auto-flow: column;
+  padding: 12px 24px;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: background-color 0.2s var(--timing-function-slow-ease);
+}
+
+.primary {
+  width: 100%;
+  background: var(--text-1);
+  color: var(--surface-1);
+}
+
+.primary:hover {
+  color: var(--text-1);
+  background-color: var(--link);
+}
+
+.controls {
+  padding-top: 16px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  padding-inline: 32px;
+  gap: 24px;
+}
+
+.card {
+  display: grid;
+  background-color: var(--surface-3);
+  color: var(--text-3);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-3);
+  display: grid;
+  padding: 16px;
+}
+
+.content {
+  padding-inline: 8px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  font-size: 1.375rem;
+}
+
+.card-title {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.align-right {
+  text-align: end;
+}
+
+.card-image {
+  object-fit: cover;
+  object-position: center;
+}

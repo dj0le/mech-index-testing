@@ -1,0 +1,101 @@
+/* Mech Overview Page Additional CSS */
+
+/* .control-left {
+  padding-left: 16px;
+  border: 2px solid purple;
+}
+
+.control-right {
+  padding-right: 16px;
+  justify-self: end;
+  border: 2px solid purple;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  border: 2px solid red;
+} */
+
+.mech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.info-grid {
+  display: grid;
+  justify-content: start;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 2px;
+}
+
+.column-left {
+  color: var(--text-4);
+  justify-self: end;
+}
+.column-right {
+  justify-self: start;
+  padding-left: 8px;
+}
+
+.overview-h1 {
+  color: var(--text-2);
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-hero);
+  letter-spacing: -var(--letter-spacing-title);
+  line-height: 1.3em;
+}
+.decoration-overview-h1 {
+  position: relative;
+}
+.decoration {
+  position: absolute;
+  top: 57%;
+  left: 0;
+}
+
+.overview-h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-4);
+  text-align: center;
+  margin-right: 9.75rem;
+}
+
+@media (max-width: 848px) {
+  .mech-grid {
+    grid-template-columns: 1fr;
+  }
+  .overview-h1 {
+    text-align: center;
+    padding-block: 32px;
+    font-size: clamp(2rem, 10vw, 7.8125rem);
+  }
+}
+
+@media (min-width: 848px) {
+  .overview-h1 {
+    font-size: clamp(3rem, 7vw, 7.8125rem);
+  }
+  .decoration-overview-h1 {
+    margin-left: -4rem;
+  }
+  .overview-h2 {
+    padding-top: 2rem;
+  }
+}
+
+/* reset stuff */
+
+body {
+  display: grid;
+  place-items: center;
+}
