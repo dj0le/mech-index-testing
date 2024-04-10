@@ -14,3 +14,5 @@ def get_mechs(db: Session, skip: int = 0, limit: int = 30):
 def get_mech_cards(db: Session, skip: int = 0, limit: int = 30):
     return db.query(models.Mech.id, models.Mech.chassis, models.Mech.weightClass, models.Mech.year).offset(skip).limit(limit).all()
     
+def get_images(db: Session, skip: int = 0, limit: int = 30):
+    return db.query(models.Image).offset(skip).limit(limit).all()

@@ -20,6 +20,19 @@ class Mech(MechBase):
     engine: str
     heatCapacity: int
     heatSinks: int
+    thumbnail: str
+    image: str
+
+    class Config:
+        orm_mode = True
+
+
+class ImageBase(BaseModel):
+    id: int
+
+class Image(ImageBase):
+    imageFileName: str
+    thumbnail: str
 
     class Config:
         orm_mode = True

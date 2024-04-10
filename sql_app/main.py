@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from pydantic import Field
 from contextlib import asynccontextmanager
 
 from . import crud, models, schemas
@@ -44,3 +45,9 @@ def read_mech(request: Request, mech_id: int, db: Session = Depends(get_db)):
         "overview.html", {"request": request, 'mech': mech_details}
     )
 
+@app.get("/images/", response_class=HTMLResponse, include_in_schema=False)
+def list_mech_images(request: Request, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    images = crud.get_images(db, skip=skip, limit=limit)
+    return templates.TemplateResponse(
+        "index.html", {"request": request, 'mech_images': images}
+    )

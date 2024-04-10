@@ -32,6 +32,10 @@ This scraper opens a text list of urls and automatically downloads the original 
 
 This scraper combines the Image Scraper and DL Image functions into a single source, and keeps the list in memory rather than writing it to a file as an intermediate step
 
+### Folder Scraper (folderscraper.py)
+
+This scraper scans a designated folder (set in the path variable), and writes all the image names into a csv file. This can then be imported into SQL
+
 ## MechViewer
 
 This section is the FastAPI build of a subset of the mechs that were scraped. Specifically, I grabbed all of the 'Mech Warrior Online' battlemechs, and made a smaller, more manageable database. Progress is ongoing, but the end result will be a full online viewer.
