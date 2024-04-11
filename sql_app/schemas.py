@@ -12,7 +12,7 @@ class Mech(MechBase):
     weightClass: str
     cost: int
     bv: int
-    isClan: bool
+    isClan: str
     armorType: str
     totalExternalArmor: int
     totalInternalArmor: int
@@ -20,8 +20,6 @@ class Mech(MechBase):
     engine: str
     heatCapacity: int
     heatSinks: int
-    thumbnail: str
-    image: str
 
     class Config:
         orm_mode = True

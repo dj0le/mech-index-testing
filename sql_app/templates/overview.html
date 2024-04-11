@@ -84,11 +84,7 @@
               <div class="column-left">BV:</div>
               <div class="column-right">{{ mech.bv }}</div>
               <div class="column-left">Origin:</div>
-              {% if mech.isClan is sameas true %}
-              <div class="column-right">Clan</div>
-              {% else %}
-              <div class="column-right">Inner Sphere</div>
-              {% endif %}
+              <div class="column-right">{{ mech.isClan }}</div>
               <div class="column-left">Armor Type:</div>
               <div class="column-right">{{ mech.armorType }}</div>
               <div class="column-left">External Armor Rating:</div>

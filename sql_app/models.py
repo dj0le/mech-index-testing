@@ -15,7 +15,7 @@ class Mech(Base):
     weightClass = Column(String)
     cost = Column(Integer)
     bv = Column(Integer)
-    isClan = Column(Boolean, default=False)
+    isClan = Column(String)
     armorType = Column(String)
     totalExternalArmor = Column(Integer)
     totalInternalArmor = Column(Integer)

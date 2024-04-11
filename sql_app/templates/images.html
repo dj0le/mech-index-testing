@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', path='/index.css') }}" />
   </head>
   <body>
+    <p>just testing</p>
     <div class="image-grid">
       {% for image in mech_images %}
         <div>
-          <img
-          class = "image-temp"
-          src="{{ url_for('static', path='/mech_images/' + image.fullsize ) }}"
-          alt="TWO Battlemech"
-          width="500"
-          height="500"
-        />
+          <p> {{ image.chassis }}</p>
+          <!-- <p> {{ image.thumbnail }}</p> -->
+
       {% endfor %}
     </div>
   </body>
