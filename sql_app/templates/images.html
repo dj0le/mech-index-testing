@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="{{ url_for('static', path='/index.css') }}" />
   </head>
   <body>
-
-
-      <div class="card-list">
-        {% for image in mech_images %}
-        <div class="card">
-          <div>
-              {{ image.thumbnail }}
-          </div>
-   
-        {% endfor %}
-      </div>
-
+    <div class="image-grid">
+      {% for image in mech_images %}
+        <div>
+          <img
+          class = "image-temp"
+          src="{{ url_for('static', path='/mech_images/' + image.fullsize ) }}"
+          alt="TWO Battlemech"
+          width="500"
+          height="500"
+        />
+      {% endfor %}
+    </div>
   </body>
 </html>

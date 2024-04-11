@@ -49,5 +49,5 @@ def read_mech(request: Request, mech_id: int, db: Session = Depends(get_db)):
 def list_mech_images(request: Request, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     images = crud.get_images(db, skip=skip, limit=limit)
     return templates.TemplateResponse(
-        "index.html", {"request": request, 'mech_images': images}
+        "images.html", {"request": request, 'mech_images': images}
     )

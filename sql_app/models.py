@@ -24,14 +24,14 @@ class Mech(Base):
     heatCapacity = Column(Integer)
     heatSinks = Column(Integer)
 
-    images = relationship("Image", back_populates="mech")
+    mech_images = relationship("MechPics", back_populates="owner")
 
-class Image(Base):
+class MechPics(Base):
     __tablename__ = "mech_images"
 
     id = Column(Integer, primary_key=True)
-    imageFileName = Column(String)
+    fullsize = Column(String)
     thumbnail = Column(String)
     mech_id = Column (Integer, ForeignKey("mwomechs.id"))
 
-    mech = relationship("Mech", back_populates="images")
+    owner = relationship("Mech", back_populates="mech_images")

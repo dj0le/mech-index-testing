@@ -27,12 +27,11 @@ class Mech(MechBase):
         orm_mode = True
 
 
-class ImageBase(BaseModel):
+class MechPics(BaseModel):
     id: int
-
-class Image(ImageBase):
-    imageFileName: str
+    fullsize: str
     thumbnail: str
+    mech_id: int
 
     class Config:
         orm_mode = True

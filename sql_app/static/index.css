@@ -65,7 +65,6 @@
   color: var(--text-3);
   border: 2px solid var(--border);
   border-radius: var(--radius-3);
-  display: grid;
   padding: 16px;
 }
 
@@ -93,4 +92,17 @@
 .card-image {
   object-fit: cover;
   object-position: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border: 5px solid var(--border);
+  border-radius: var(--radius-3);
+  gap: 16px;
+}
+
+.image-temp {
+  width: 500px;
+  height: auto;
 }
