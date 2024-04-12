@@ -13,6 +13,13 @@
       {% for image in mech_images %}
         <div>
           <p> {{ image.chassis }}</p>
+          <img
+          class = "image-temp"
+          src="{{ url_for('static', path='/mech_thumbnails/' + image.thumbnail ) }}"
+          alt="TWO Battlemech"
+          width="200"
+          height="200"
+        />
           <!-- <p> {{ image.thumbnail }}</p> -->
 
       {% endfor %}

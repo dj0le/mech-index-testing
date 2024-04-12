@@ -25,7 +25,7 @@ class Mech(MechBase):
         orm_mode = True
 
 
-class MechPics(BaseModel):
+class Image(BaseModel):
     id: int
     fullsize: str
     thumbnail: str

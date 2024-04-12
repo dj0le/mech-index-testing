@@ -15,7 +15,7 @@ html {
   --text-3: hsl(28 42 91);
   --text-4: hsl(177 31 24);
   --border: hsl(103 11 12);
-  --link: hsl(45 73 65);
+  --link: hsl(44 12 56);
 
   --space-sm: var(--size-3);
   --space-lg: var(--size-5);
@@ -34,6 +34,10 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  background-image: url('bglines2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--surface-1);
   color: var(--text-1);
   font-family: var(--font-body);
@@ -41,6 +45,23 @@ body {
   letter-spacing: var(--letter-spacing-body);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-body);
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border-radius: var(--radius-2);
+  cursor: pointer;
+  display: inline-grid;
+  gap: var(--space-sm);
+  grid-auto-flow: column;
+  padding: 12px 24px;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: background-color 0.2s var(--timing-function-slow-ease);
 }
 
 /* reset stuff */

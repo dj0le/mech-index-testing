@@ -24,9 +24,9 @@ class Mech(Base):
     heatCapacity = Column(Integer)
     heatSinks = Column(Integer)
 
-    mech_images = relationship("MechPics", back_populates="owner")
+    mech_images = relationship("Image", back_populates="owner")
 
-class MechPics(Base):
+class Image(Base):
     __tablename__ = "mech_images"
 
     id = Column(Integer, primary_key=True)

@@ -18,6 +18,40 @@
   border: 2px solid red;
 } */
 
+.nav-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
+}
+
+.previous,
+.next {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  border: none;
+  color: var(--text-3);
+  height: 4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.previous {
+  background-image: url('arrow-prev2.svg');
+}
+
+.next {
+  background-image: url('arrow-next2.svg');
+}
+
+.hangar {
+  border: none;
+  background-image: url('hangar-icon.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .mech-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
