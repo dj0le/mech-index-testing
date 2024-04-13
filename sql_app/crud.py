@@ -12,7 +12,7 @@ def get_mechs(db: Session, skip: int = 0, limit: int = 30):
     return db.query(models.Mech).offset(skip).limit(limit).all()
 
 def get_mech_cards(db: Session, skip: int = 0, limit: int = 30):
-    return db.query(models.Mech.id, models.Mech.chassis, models.Mech.weightClass, models.Mech.year, models.Image.thumbnail).join(models.Mech,models.Image.mech_id == models.Mech.id).offset(skip).limit(limit).all()
+    return db.query(models.Mech.id, models.Mech.chassis, models.Mech.weightClass, models.Mech.year, models.Image.thumbnail).join(models.Mech,models.Image.mech_id == models.Mech.id).order_by(models.Mech.id).offset(skip).limit(limit).all()
 
 def get_images(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Mech.id, models.Mech.chassis, models.Mech.weightClass, models.Mech.year, models.Image.thumbnail).join(models.Mech,models.Image.mech_id == models.Mech.id).offset(skip).limit(limit).all()
