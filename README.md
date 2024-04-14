@@ -39,3 +39,5 @@ This scraper scans a designated folder (set in the path variable), and writes al
 ## MechViewer
 
 This section is the FastAPI build of a subset of the mechs that were scraped. Specifically, I grabbed all of the 'Mech Warrior Online' battlemechs, and made a smaller, more manageable database. Progress is ongoing, but the end result will be a full online viewer.
+
+To see this in use, go to the 'Mech-Index' repo, or at this url:
