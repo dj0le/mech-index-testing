@@ -79,20 +79,19 @@
   padding-left: 8px;
 }
 
-.overview-h1 {
-  color: var(--text-2);
+.decoration {
+  display: inline-block;
+  background-image: url('lines3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 95%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   font-family: var(--font-title);
   font-weight: var(--font-weight-hero);
   letter-spacing: -var(--letter-spacing-title);
-  line-height: 1.3em;
-}
-.decoration-overview-h1 {
-  position: relative;
-}
-.decoration {
-  position: absolute;
-  top: 57%;
-  left: 0;
+  line-height: 0.9em;
 }
 
 .overview-h2 {
@@ -108,18 +107,15 @@
   .mech-grid {
     grid-template-columns: 1fr;
   }
-  .overview-h1 {
-    text-align: center;
+  .decoration {
     padding-block: 32px;
     font-size: clamp(2rem, 10vw, 7.8125rem);
   }
 }
 
 @media (min-width: 848px) {
-  .overview-h1 {
+  .decoration {
     font-size: clamp(3rem, 7vw, 7.8125rem);
-  }
-  .decoration-overview-h1 {
     margin-left: -4rem;
   }
   .overview-h2 {

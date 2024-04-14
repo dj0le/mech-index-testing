@@ -1,4 +1,4 @@
-from sqlalchemy import Boolean, Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 
 from .database import Base
@@ -24,7 +24,7 @@ class Mech(Base):
     heatCapacity = Column(Integer)
     heatSinks = Column(Integer)
 
-    mech_images = relationship("Image", back_populates="owner")
+    image = relationship("Image", back_populates="owner")
 
 class Image(Base):
     __tablename__ = "mech_images"
@@ -34,4 +34,4 @@ class Image(Base):
     thumbnail = Column(String)
     mech_id = Column (Integer, ForeignKey("mwomechs.id"))
 
-    owner = relationship("Mech", back_populates="mech_images")
+    owner = relationship("Mech", back_populates="image")

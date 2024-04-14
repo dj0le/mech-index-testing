@@ -1,3 +1,30 @@
+{'type': 'missing', 
+'loc': ('response', 'shortName'), 
+'msg': 'Field required', 
+'input': (11, 'Black Knight', 
+'Heavy', 3067, 
+'small_MWO_Black_Knight.webp'), 
+'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+
+
+
+{'type': 'missing', 'loc': ('response', 'model'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'weight'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'cost'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'bv'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'isClan'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'armorType'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'totalExternalArmor'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'totalInternalArmor'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'structureType'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'engine'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'heatCapacity'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+{'type': 'missing', 'loc': ('response', 'heatSinks'), 'msg': 'Field required', 'input': (11, 'Black Knight', 'Heavy', 3067, 'small_MWO_Black_Knight.webp'), 'url': 'https://errors.pydantic.dev/2.6/v/missing'}
+
+
+
+
+
 [
   {
     "isClan": true,

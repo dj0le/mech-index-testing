@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{{ url_for('static', path='/favicon.png') }}" />
     <title>Mech Overview</title>
     <link rel="stylesheet" href="{{ url_for('static', path='/app.css') }}" />
     <link
@@ -33,7 +34,7 @@
         <div class="overview-image">
           <img
             class="card-image"
-            src="{{ url_for('static', path='/images/test3.png') }}"
+            src="{{ url_for('static', path='/mech_images/' + mech.fullsize ) }}"
             alt="{{ mech.chassis }}"
             width="1000"
             height="1000"
@@ -41,33 +42,7 @@
         </div>
 
         <div>
-          <div class="decoration-overview-h1">
-            <h1 class="overview-h1">{{ mech.chassis }}</h1>
-            <div class="decoration">
-              <svg
-                width="1138"
-                height="21"
-                viewBox="0 0 1138 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 19H1138 stroke="#899D82" stroke-opacity="0.8"
-                stroke-width="3" />
-                <path
-                  d="M0 10H1138"
-                  stroke="#899D82"
-                  stroke-opacity="0.6"
-                  stroke-width="2"
-                />
-                <path
-                  d="M0 1H1138"
-                  stroke="#899D82"
-                  stroke-opacity="0.4"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
+          <h1 class="decoration">{{ mech.chassis }}</h1>
           <div class="info-grid">
             <h2 class="overview-h2">overview</h2>
             <div class="details">
